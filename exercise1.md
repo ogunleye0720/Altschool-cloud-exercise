@@ -19,4 +19,5 @@ This command allows us to access / enter the machine.
 The next step is to go back to our directory where we stored the vagrant in this case on my Desktop (C:\Users\Admin\Desktop\Altschool-Cloud)
 Open the vagrant file with ant text editor(Vscode, sublime, etc)
 Change the private network to type: "dhcp" as shown below:
- <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/alt-cloud2.JPG" height="10%" width="50%" />
+
+                    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/alt-cloud2.JPG" height="10%" width="50%" />
