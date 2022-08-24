@@ -16,10 +16,23 @@ The next command is:
 C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04 vagrant ssh
 This command allows us to access / enter the machine.
 
-The next step is to go back to our directory where we stored the vagrant in this case on my Desktop (C:\Users\Admin\Desktop\Altschool-Cloud)
-Open the vagrant file with ant text editor(Vscode, sublime, etc)
-Change the private network to type: "dhcp" as shown below:
+<p> The next step is to go back to our directory where we stored the vagrant in this case on my Desktop (C:\Users\Admin\Desktop\Altschool-Cloud)
+Open the vagrant file with ant text editor(Vscode, sublime, etc)</p>
+
+<p>Change the private network to type: "dhcp" as shown below:</p>
 
 <p align="center">
 <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/alt-cloud2.JPG" height="10%" width="50%" />
+</p>
+
+<p> Back to the command line, run the command, ~$ ifconfig </p>
+
+<p>incase of error: command not found? </p>
+<p> do, ~$ sudo apt install net-tools </p>
+
+once istalled do the following command;
+<p> ~$ ifconfig </p>
+The image below displays the expected output, which represents the three network layers actively running on the machine.
+<p align="center">
+<img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/altschool-cloud-ex1.JPG" height="10%" width="50%" />
 </p>
