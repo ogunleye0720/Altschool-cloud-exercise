@@ -14,4 +14,9 @@
      The grep command prints the lines from a file or input stream that matches an expression.
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/grep-command.JPG" height="10%" width="40%" />
   </li>
+  <li>
+    <p>The uptime command in linux is used to display the information about how long the system has been running. It returns the current time, running state time, the number of users logged in, and the load of time. </p>
+    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/up-time command.JPG" height="10%" width="40%" />
+  </li>
 </ul>
+up-time command.JPG
