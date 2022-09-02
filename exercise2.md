@@ -1,6 +1,6 @@
 <h2 style = "font-weight: bold; color: yellow;"> TEN LINUX COMMANDS </h2>
 <p>There are numerous commands in linux, some of the commands are:</p>
-<ul>
+<ol>
   <li>
      The date command: The date command displays the current date on the terminal as shown in the image below;
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/date-command.JPG" height="10%" width="40%" />
@@ -41,5 +41,5 @@
     <p>The mv [file1] [file2] command in linux is used to rename a file, file1 is renamed to file2. </p>
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/command1.JPG" height="10%" width="40%" />
   </li>
-</ul>
+</ol>
 
