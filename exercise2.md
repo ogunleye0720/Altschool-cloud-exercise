@@ -18,7 +18,7 @@
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/up-time command.JPG" height="10%" width="40%" />
   </li>
   <li>
-    <p>The ps ax command in linux shows all the process in the system, icluding those of other users. </p>
+    <p>The <span style = "color: blue;">ps ax</span> command in linux shows all the process in the system, icluding those of other users. </p>
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/ps-ax-command.JPG" height="10%" width="40%" />
   </li>
   <li>
@@ -26,7 +26,7 @@
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/ps-command.JPG" height="10%" width="40%" />
   </li>
   <li>
-    <p>The ls command in linux lists the contents of directory. </p>
+    <p>The ls -l command in linux lists in details, the contents of a directory. </p>
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/ls-command.JPG" height="10%" width="40%" />
   </li>
   <li>
