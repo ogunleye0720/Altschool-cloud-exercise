@@ -38,7 +38,7 @@
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/cp-command.JPG" height="10%" width="40%" />
   </li>
   <li>
-    <p>The **mv** **[file1]** **[file2]** command in linux is used to rename a file, file1 is renamed to file2. </p>
+    <p>The __mv__ **[file1]** **[file2]** command in linux is used to rename a file, file1 is renamed to file2. </p>
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/command1.JPG" height="10%" width="40%" />
   </li>
 </ol>
