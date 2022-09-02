@@ -1,8 +1,8 @@
-<h2 style = "font-weight: bold; color: yellow;"> TEN LINUX COMMANDS </h2>
+<h2 style = "font-weight: bold;"> TEN LINUX COMMANDS </h2>
 <p>There are numerous commands in linux, some of the commands are:</p>
 <ol>
   <li>
-     The date command: The date command displays the current date on the terminal as shown in the image below;
+     The date command: The <span style = "text-decoration: underline">date<span> command displays the current date on the terminal as shown in the image below;
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/date-command.JPG" height="10%" width="40%" />
   </li>
    <li>
@@ -18,7 +18,7 @@
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/up-time command.JPG" height="10%" width="40%" />
   </li>
   <li>
-    <p>The <span style = "color: blue;">ps ax</span> command in linux shows all the process in the system, icluding those of other users. </p>
+    <p>The <span style = "font-weight: bold;">ps ax</span> command in linux shows all the process in the system, icluding those of other users. </p>
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/ps-ax-command.JPG" height="10%" width="40%" />
   </li>
   <li>
