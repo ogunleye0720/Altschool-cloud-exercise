@@ -7,7 +7,7 @@
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/date-command.JPG" height="10%" width="40%" />
   </li>
    <li>
-     The History command is built-in shell tool that displays all the commands that have been entered previously on the terminal session as shown in the image below;
+     The History command is built-in shell tool that displays all the commands that have been entered previously on the terminal session;
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/history-command.JPG" height="5%" width="40%" />
   </li>
   <li>
