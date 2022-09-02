@@ -2,7 +2,7 @@
 <p>There are numerous commands in linux, some of the commands are:</p>
 <ol>
   <li>
-     The date command: The <span style = "text-decoration: underline">date<span> command displays the current date on the terminal as shown in the image below;
+     The date command: The <span style = "font-weight: bold;">date<span> command displays the current date on the terminal as shown in the image below;
     <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/date-command.JPG" height="10%" width="40%" />
   </li>
    <li>
