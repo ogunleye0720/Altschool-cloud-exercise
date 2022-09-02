@@ -1,4 +1,4 @@
-<h2 style = "font-weight: bold; color: blue;"> TEN LINUX COMMANDS </h2>
+<h2 style = "font-weight: bold; color: yellow;"> TEN LINUX COMMANDS </h2>
 <p>There are numerous commands in linux, some of the commands are:</p>
 <ul>
   <li>
