@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vw;
+    background: linear-gradient(rgba(7, 4, 4, 0.253), rgba(7, 4, 5, 0.253)), url("./pexels-mikhail-nilov-7583935.jpg") center/cover no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    margin-left: 35%;
+}
+.card{
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 5px;
+}
+.form-1{
+    margin-bottom: 5%;
+}
+.task-form{
+    margin-left: 20%;
+}
+.Task-entry{
+    padding-bottom: 15%;
+}
+.input-field input, .Task-entry input{
+    padding: 5px;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.Task-entry input{
+    margin-left: 20%;
+    width: 55%;
+}
+.form-1 .Btn{
+    padding: 5px;
+    margin-left: 15%;
+    width: 40%;
+    color: #000;
+    background-color: rgb(3, 117, 3);
+    border-width: 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.Task-entry .clear-btn button{
+    padding: 5px;
+    margin-left: 30%;
+    width: 40%;
+    color: #000;
+    background-color: rgb(3, 117, 3);
+    border-width: 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.collection{
+    margin-top: 2%;
+    padding: 2%;
+    font-size: 1rem;
+    color: #000;
+    list-style: none;
+    text-align: center;
+}
+.collection, .collection-item{
+    position: relative;
+}
+.collection-item:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(37, 37, 37, 0.678);
+    bottom: 0;
+    left: 20%;
+    height: 1px;
+    width: 55%;
+}
