@@ -25,13 +25,17 @@ $ cd .ssh
 ```
 <p>The public key was generated with the commands as shown above.The public key would be used to IP on a cloud provider,in this project Digital Ocean was used <br>
 	below are the steps used to create an IP on Digital Ocean:
-- A new project was created on digital ocean
-- inside the project,a new Droplet was created, The prefered Data Center(LONDON) was chosen for this project
-- Ubuntu 20.04 was the selected image type
-- A shared CPU (BASIC) was selected for this project
-- Regular with SSD was the CPU option selected
-- The public ssh key generated from the local linux system was pasted in the Authentication Method
-- The droplet was created and a host ip address was generated
+<ol>	
+	
+ <li> A new project was created on digital ocean </li>
+ <li> inside the project,a new Droplet was created, The prefered Data Center(LONDON) was chosen for this project </li>
+ <li> Ubuntu 20.04 was the selected image type </li>
+ <li> A shared CPU (BASIC) was selected for this project </li>
+ <li> Regular with SSD was the CPU option selected </li>
+ <li> The public ssh key generated from the local linux system was pasted in the Authentication Method </li>
+ <li> The droplet was created and a host ip address was generated </li>
+	
+</ol>
 </p> 
 <br>
 <br>
