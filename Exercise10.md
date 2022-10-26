@@ -14,7 +14,6 @@ $ ansible --version
 ```
 
 <br>
-<br>
 
 ## SSH KEY PAIR GENERATIOM
 ``` bash
@@ -43,9 +42,6 @@ $ cd .ssh
 ``` bash
 $ sudo nano /etc/hosts
 
-#the ip was stored inside the file
-[webservers]
-generated ip
 ```
 <br>
 <h2> ANSIBLE PLAYBOOK INSTALLATION </h2>
@@ -54,7 +50,7 @@ generated ip
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/playbookcontent1.JPG" height="20%" width="60%" /></p>
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/playbookcontent2.JPG" height="20%" width="60%" /></p>
 
-## EXECUTION OF PLAYBOOK
+<h2> EXECUTION OF PLAYBOOK </h2>
 <p>The following command was entered to test the setup.yml playbook for syntax error before executing it.</p>
 <br>
 ``` bash
