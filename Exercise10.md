@@ -55,6 +55,7 @@ $ sudo nano /etc/hosts
 
 <br>
 <br>
+
 ``` bash
 $ ansible-playbook setup.yml --check
 $ ansible-playbook setup.yml 
