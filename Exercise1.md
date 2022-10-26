@@ -4,14 +4,23 @@
 -  The Second Step is to download and set up vagrant (https://www.vagrantup.com/) on your host machine.
 -  The Third step is to create a directory structure like this: C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04 on your host machine. This directory is where Vagrant would store all its files, when created.
 -  Open up any command line interface, and cd C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04 for windows users, browse and findout the equivalent     command for mac users.
--  Still on the directory opened on the command line interface and on the directory, run the following command: 
-<p>C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant init ubuntu/focal64</p>
+-  Still on the directory opened on the command line interface and on the directory, run the following command:
+
+<br>
+<br>
+
+``` bash
+C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant init ubuntu/focal64
+
+```
+
 <P>press enter,</p>
 <p>this creates all the files for vagrant configurations.</p>
 -  The next command is:
 
 <br>
 <br>
+
 ``` bash
 C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant up
 
@@ -23,6 +32,7 @@ C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant up
 
 <br>
 <br>
+
 ``` bash
 <C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04 vagrant ssh
 
@@ -55,6 +65,7 @@ Open the vagrant file with ant text editor(Vscode, sublime, etc)
 
 <br>
 <br>
+
 ``` bash
 ~$ sudo apt install net-tools
 
