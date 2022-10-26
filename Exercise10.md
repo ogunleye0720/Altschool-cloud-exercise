@@ -87,5 +87,5 @@ $ sudo nano indexphp.yml
 ```
 
 <p> The commands were entered into the indexphp.yml as shown in the picture below: </p>
-<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/indexphp.JPG" height="20%" width="60%" /></p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/indexphp (2).JPG" height="20%" width="60%" /></p>
 
