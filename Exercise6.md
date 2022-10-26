@@ -6,14 +6,14 @@
 <ol>
  <li>
      output for the git config -l command
-    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/another-config-l.JPG" height="15%" width="40%" />
+    <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/another-config-l.JPG" height="15%" width="40%" /></p>
   </li>
    <li>
      output for the git remote -v command
-    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/remote-v output.JPG" height="15%" width="40%" />
+    <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/remote-v output.JPG" height="15%" width="40%" /></p>
   </li>
    <li>
      output for the git log command:
-    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/git-log.JPG" height="15%" width="40%" />
+    <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/git-log.JPG" height="15%" width="40%" /></p>
   </li>
   </ol>
