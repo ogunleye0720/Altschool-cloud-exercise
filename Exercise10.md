@@ -48,12 +48,6 @@ generated ip
 <br>
 <h2> ANSIBLE PLAYBOOK INSTALLATION </h2>
 <br>
-<br>
-``` bash
-$ sudo nano /ansible-apache/setup.yml
-
-```
-<br>
 <p> Then the following commands as shown below were entered into setup.yml file </p>
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/playbookcontent1.JPG" height="20%" width="60%" /></p>
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/playbookcontent2.JPG" height="20%" width="60%" /></p>	
