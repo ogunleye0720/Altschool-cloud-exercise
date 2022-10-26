@@ -28,10 +28,21 @@ Open the vagrant file with ant text editor(Vscode, sublime, etc)
 - Back to the command line, run the command, ~$ ifconfig 
 
 <p>incase of error: command not found? </p>
-- do, ~$ sudo apt install net-tools
+- do,
+<br>
+<br>
+``` bash
+~$ sudo apt install net-tools
+
+```
 
 <p>once istalled do the following command;</p>
-- ~$ ifconfig 
+
+<br>
+<br>
+``` bash
+ ~$ ifconfig
+ ```
 <p>The image below displays the expected output, which represents the three network layers actively running on the machine.</p>
 <p align="center">
 <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/altschool-cloud-ex1.JPG" height="50%" width="70%" />
