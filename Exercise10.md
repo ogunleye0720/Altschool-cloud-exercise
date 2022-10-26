@@ -48,8 +48,10 @@ generated ip
 <br>
 <h2> ANSIBLE PLAYBOOK INSTALLATION </h2>
 <br>
+<br>
 ``` bash
 $ sudo nano /ansible-apache/setup.yml
+
 ```
 <br>
 <p> Then the following commands as shown below were entered into setup.yml file </p>
