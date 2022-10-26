@@ -105,3 +105,4 @@ $ systemctl status apache2
 </p> After Executing the setup.yml and indexphp.yml files, the IP address was copied and pasted in a browser bar, the php page can accessed </p>
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/indexphp content.JPG" height="20%" width="60%" /></p>
 
+[ansible-playbook file].{./setup.yml}
