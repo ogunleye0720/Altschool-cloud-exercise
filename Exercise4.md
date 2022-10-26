@@ -8,9 +8,9 @@
 
 <ol>
   <li> Output of the etc/apt/source.list directory
-    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/source.list-output.JPG" height="10%" width="40%" />
+    <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/source.list-output.JPG" height="10%" width="40%" /></p>
   </li>
    <li> Output of the php-v command
-    <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/php-v_output.JPG" height="10%" width="40%" />
+    <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/php-v_output.JPG" height="10%" width="40%" /></p>
   </li>
   </ol>
