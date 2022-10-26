@@ -36,17 +36,19 @@ $ cd .ssh
 </ul>
 </p> 
 <br>
+
 ## SAVING THE GENERATED IP ADDRESS INSIDE THE /etc/hosts file
+
 ``` bash
 $ sudo nano /etc/hosts
 
 #the ip was stored inside the file
 [webservers]
 generated ip
-
 ```
+<br>
 <h2> ANSIBLE PLAYBOOK INSTALLATION </h2>
-
+<br>
 ``` bash
 $ sudo nano /ansible-apache/setup.yml
 
