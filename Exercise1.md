@@ -77,6 +77,7 @@ Open the vagrant file with ant text editor(Vscode, sublime, etc)
 
 <br>
 <br>
+
 ``` bash
  ~$ ifconfig
  ```
