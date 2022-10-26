@@ -36,7 +36,9 @@ $ cd .ssh
 </ul>
 </p> 
 <br>
+
 ## SAVING THE GENERATED IP ADDRESS INSIDE THE /etc/hosts file
+<br>
 
 ``` bash
 $ sudo nano /etc/hosts
@@ -54,12 +56,13 @@ generated ip
 
 ## EXECUTION OF PLAYBOOK
 <p>The following command was entered to test the setup.yml playbook for syntax error before executing it.</p>
-
+<br>
 ``` bash
 $ ansible-playbook setup.yml --check
 $ ansible-playbook setup.yml 
 ```
 <p> An index.php file created and the following information was entered </p>
+<br>
 ``` bash
 $ touch index.php
 $ sudo nano index.php
