@@ -58,11 +58,15 @@ $ ansible-playbook setup.yml --check
 $ ansible-playbook setup.yml 
 ```
 <p> An index.php file created and the following information was entered </p>
+
 <br>
+<br>
+
 ``` bash
 $ touch index.php
 $ sudo nano index.php
 ```
+<br>
 <br>
 <p> The following information in the picture below was entered </p>
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/indexphp.JPG" height="20%" width="60%" /></p>
