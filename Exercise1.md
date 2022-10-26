@@ -8,12 +8,26 @@
 <p>C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant init ubuntu/focal64</p>
 <P>press enter,</p>
 <p>this creates all the files for vagrant configurations.</p>
--  The next command is: 
-<p>C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant up</p>
+-  The next command is:
+
+<br>
+<br>
+``` bash
+C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant up
+
+```
+
 <p>press enter</p>
 <p>This will autoamtically create the virtual machine.</p>
 -  The next command is:
-<p>C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04  vagrant ssh</p>
+
+<br>
+<br>
+``` bash
+<C:\Users\Admin\Desktop\Altschool-Cloud\vagrant\boxes\ubuntu20.04 vagrant ssh
+
+```
+
 <p>This command allows us to access / enter the machine.</p>
 
 - The next step is to go back to our directory where we stored the vagrant, in this case on my Desktop (C:\Users\Admin\Desktop\Altschool-Cloud)
@@ -25,16 +39,28 @@ Open the vagrant file with ant text editor(Vscode, sublime, etc)
 <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/alt-cloud2.JPG" height="50%" width="70%" />
 </p>
 
-- Back to the command line, run the command, ~$ ifconfig 
+- Back to the command line, run the command,
+
+<br>
+<br>
+
+``` bash
+~$ sudo ifconfig
+
+```
 
 <p>incase of error: command not found? </p>
-- do,
+- do:
+
+
 <br>
 <br>
 ``` bash
 ~$ sudo apt install net-tools
 
 ```
+<br>
+<br>
 
 <p>once istalled do the following command;</p>
 
@@ -43,6 +69,8 @@ Open the vagrant file with ant text editor(Vscode, sublime, etc)
 ``` bash
  ~$ ifconfig
  ```
+ <br>
+ <br>
 <p>The image below displays the expected output, which represents the three network layers actively running on the machine.</p>
 <p align="center">
 <img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/altschool-cloud-ex1.JPG" height="50%" width="70%" />
