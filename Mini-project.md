@@ -35,12 +35,9 @@
     <h3> Updating && Upgrading the apt package installer </h3>
     <p> The following command below was entered: </p>
     
-    <br>
-    <br>
-    
-    ``` bash
+``` bash
     server# apt update && apt upgrade
+```
   
-    ```
   
 </ol>
