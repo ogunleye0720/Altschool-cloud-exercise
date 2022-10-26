@@ -1,4 +1,4 @@
-<h1> SHELL SCRIPT TO DISPLAY SYSTEM DAILY MEMORY USAGE </h1>
+<h1> BASH SCRIPT TO DISPLAY SYSTEM DAILY MEMORY USAGE </h1>
 
 <p> This project is a bash script that displays the system memory usage (RAM) every hour, every mid-night, everyweek and everymonth of the year. The ouput is displayed in a log file,and sent to a specified email address using crontab</p>
   
