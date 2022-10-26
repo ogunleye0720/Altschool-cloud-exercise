@@ -52,11 +52,16 @@ $ sudo nano /etc/hosts
 
 <h2> EXECUTION OF PLAYBOOK </h2>
 <p>The following command was entered to test the setup.yml playbook for syntax error before executing it.</p>
+
+<br>
 <br>
 ``` bash
 $ ansible-playbook setup.yml --check
 $ ansible-playbook setup.yml 
 ```
+<br>
+<br>
+
 <p> An index.php file created and the following information was entered </p>
 
 <br>
