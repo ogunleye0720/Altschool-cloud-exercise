@@ -45,7 +45,7 @@ $ sudo nano /etc/hosts
 generated ip
 
 ```
-<h2> ANSIBLE PLAYBOOK INSTALLATION </P>
+<h2> ANSIBLE PLAYBOOK INSTALLATION </h2>
 
 ``` bash
 $ sudo nano /ansible-apache/setup.yml
