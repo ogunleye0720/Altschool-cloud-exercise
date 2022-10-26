@@ -25,8 +25,7 @@ $ cd .ssh
 ```
 <p>The public key was generated with the commands as shown above.The public key would be used to IP on a cloud provider,in this project Digital Ocean was used <br>
 	below are the steps used to create an IP on Digital Ocean:
-<ol>	
-	
+<ul>	
  <li> A new project was created on digital ocean </li>
  <li> inside the project,a new Droplet was created, The prefered Data Center(LONDON) was chosen for this project </li>
  <li> Ubuntu 20.04 was the selected image type </li>
@@ -34,12 +33,9 @@ $ cd .ssh
  <li> Regular with SSD was the CPU option selected </li>
  <li> The public ssh key generated from the local linux system was pasted in the Authentication Method </li>
  <li> The droplet was created and a host ip address was generated </li>
-	
-</ol>
+</ul>
 </p> 
 <br>
-<br>
-
 ## SAVING THE GENERATED IP ADDRESS INSIDE THE /etc/hosts file
 ``` bash
 $ sudo nano /etc/hosts
@@ -50,3 +46,10 @@ generated ip
 
 ```
 <h2> ANSIBLE PLAYBOOK INSTALLATION </P>
+``` bash
+$ sudo nano /ansible-apache/setup.yml 
+```
+<br>
+<p> Then the following commands as shown below were entered into setup.yml file </p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/playbookcontent1.JPG" height="20%" width="60%" /><p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/playbookcontent2.JPG" height="20%" width="60%" /><p>	
