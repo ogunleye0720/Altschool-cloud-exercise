@@ -10,12 +10,12 @@
 
 <ol>
   <li> output for the /etc/passwd contents
-     <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/etc-passwd-new.JPG" height="10%" width="40%" /></p>
+     <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/etc-passwd-new.JPG" height="10%" width="70%" /></p>
   </li>
   <li> output for the /etc/group contents
-     <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/etc-group-new.JPG" height="10%" width="40%" /></p>
+     <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/etc-group-new.JPG" height="10%" width="70%" /></p>
   </li>
   <li> output for the /etc/sudoers contents
-     <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/sudoers_new.JPG" height="10%" width="40%" /></p>
+     <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/sudoers_new.JPG" height="10%" width="70%" /></p>
   </li>
   </ol>
