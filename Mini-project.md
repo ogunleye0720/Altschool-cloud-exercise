@@ -140,4 +140,112 @@ sudo apt install php libapache2-mod-php php8.1-mysql php8.1-common php8.1-mysql 
 ``` bash
  php -v
 ```
+  <p> PHP configuration </p>
+  
+``` bash
+sudo nano /etc/php/8.1/apache2/php.ini
+```
+  
+  <p> The file is opened and edited fpr better performance</p>
+  
+``` bash
+upload_max_filesize = 32M 
+post_max_size = 128M 
+memory_limit = 256M 
+max_execution_time = 300 
+max_input_vars = 3000 
+max_input_time = 5000
+```
+  
+  <p> Configure Apache and disable Default </p>
+  
+``` bash
+  sudo a2dissite 000-default
+```
+  
+``` bash
+sudo chmod -R 755 /var/www/html/ogunleye
+sudo chown -R www-data:www-data /var/www/html/ogunleye
+```
+  
+  
+``` bash
+  sudo nano /etc/apache2/sites-available/0gunleye.conf
+  
+```
+  
+  <h2> set the folowing command in the file </h2>
+  
+  
+ ``` bash
+  <VirtualHost *:80>
+     ServerAdmin support@ogunleye1995.me
+     ServerName ogunleye1995.me
+     ServerAlias www.ogunlye1995.me
+
+     DocumentRoot /var/www/ogunleye
+
+     <Directory /var/www/ogunleye>
+         Options Indexes FollowSymLinks
+         AllowOverride All
+         Require all granted
+     </Directory>
+
+     ErrorLog ${APACHE_LOG_DIR}/error.log 
+     CustomLog ${APACHE_LOG_DIR}/access.log combined 
+ </VirtualHost>
+ ```
+  
+ ``` bash
+  /var/www/ogunleye #cp .env.example .env
+  ```
+  
+  <p>Create Database : <p>
+
+``` bash
+  # sudo nano .env
+```
+  <p> The .env file was edited as shown below :</p>
+  
+``` bash
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=
+APP_URL=http://ogunleye1995.me
+APP_PORT = 3000
+
+DB_CONNECTON = mysql
+DB_HOST=localhost
+DB_PORT = 3306
+DB_DATABASE=ogunleye
+DB_USERNAME=ogunleye
+DB_PASSWORD=**********
+
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+QUEUE_DRIVER=sync
+
+REDIS_HOST=localhost
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_DRIVER=smtp
+MAIL_HOST=googlemail.com
+MAIL_PORT=465
+MAIL_USERNAME=XXXXXXXXXXX
+MAIL_PASSWORD=XXXXXXXXXXX
+MAIL_ENCRYPTION=null
+```
+  
+``` bash
+  mysql -u root-p
+```
+  
+``` bash
+  mysql > CREATE DATABASE ogunleye;
+  mysql > CREATE USER 'ogunleye'@'localhost' IDENTIFIED BY 'pass_word';
+  msql > GRAND ALL ON ogunleye.* TO 'ogunleye'@localhost' IDENTIFIED BY 'pass_word';
+  
+```
+  
 </ol>
