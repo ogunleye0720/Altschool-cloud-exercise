@@ -11,13 +11,23 @@
   
  ```
 <p>The shell script was created and the commands to log the RAM usage information into a specified file was entered, as shown in the image below</p>
-<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/ALT-SHELL-SCRIPT-ASSNMNT.JPG" height="10%" width="40%" /><p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/ALT-SHELL-SCRIPT-ASSNMNT.JPG" height="10%" width="90%" /><p>
   
 <p> Crontab,which is a file that contains the schedule of cron entries to be run and at specified times, was installed using the following command</p>
+
+``` bash
+$ sudo install crontab
+```
 
 ``` bash
 $ sudo crontab -e
 ```
 
 <p>The crontab was installed and edited to run the task specified in the path as shown in the image below</p>
-<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/crontab-daily-memory-usage.JPG" height="10%" width="40%" /><p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/crontab-daily-memory-usage.JPG" height="10%" width="90%" /><p>
+  
+<p> The email message is shown in the image below </p>
+<p></p>
+
+<p> The content of the email is shown in the image below </p>
+<p></p>
