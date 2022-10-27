@@ -174,11 +174,11 @@ sudo chown -R www-data:www-data /var/www/html/ogunleye
   
 ```
   
-  <h2> set the folowing command in the file </h2>
+  <h2> Setting up virtual host configuration </h2>
   
   
  ``` bash
-  <VirtualHost *:80>
+ <VirtualHost *:80>
      ServerAdmin support@ogunleye1995.me
      ServerName ogunleye1995.me
      ServerAlias www.ogunlye1995.me
@@ -238,14 +238,87 @@ MAIL_ENCRYPTION=null
 ```
   
 ``` bash
-  mysql -u root-p
+  mysql -u root -p
 ```
   
 ``` bash
   mysql > CREATE DATABASE ogunleye;
   mysql > CREATE USER 'ogunleye'@'localhost' IDENTIFIED BY 'pass_word';
-  msql > GRAND ALL ON ogunleye.* TO 'ogunleye'@localhost' IDENTIFIED BY 'pass_word';
+  mysql > GRAND ALL ON ogunleye.* TO 'ogunleye'@localhost';
+  mysql > FLUSH PRIVILEGES;
+```
+  <p>Installing Module Rewrite : </p>
   
+``` bash
+  var/www/ogunleye# a2enmode rewrite
+```  
+  <p> Then System restart apache2 </p>
+  
+``` bash
+  systemctl restart apache2
 ```
   
+  <p> Adding htaccess: </p>
+  
+``` bash
+  /var/www/ogunleye# nano .htaccess
+```
+  <p> The file is opened and edited as shown below: </p>
+  
+``` bash
+<IfModule mod_rewrite.c>
+RewriteEngine On 
+    
+RewriteCond %{REQUEST_URI} !^/public/ 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+    
+RewriteRule ^(.*)$ /public/$1 
+RewriteRule ^(/)?$ public/index.php [L] 
+</IfModule>
+```
+  <p> Configuring the Laravel ROUTING </P>
+  
+``` bash
+sudo nano routes/web.php
+```
+
+``` bash
+Route::get ('/', function () {
+   return view('welcome');});
+```
+<p> Migrating the DB (migrate db) </p>
+
+
+``` bash
+var/www/ogunleye# composer install
+```
+
+``` bash
+var/www/ogunleye# apt install unzip
+```
+
+``` bash
+var/www/ogunleye# composer update
+```
+
+``` bash
+var/www/ogunleye# composer create-project
+```
+
+``` bash
+var/www/ogunleye# php artisan migrate --seed
+```
+
+``` bash
+var/www/ogunleye# sudo a2ensite ogunleye
+```
+
+``` bash
+var/www/ogunleye# systemctl reload apache2
+```
+
+<p> Opening ogunleye1995.me on the chrome browser,the result is shown in the image below : </p>
+<p></p>
 </ol>
+
