@@ -50,6 +50,7 @@
 ```
   
   <h3> setting timezone </h3>
+  
 ``` bash
   server# sudo timedatectl set-timezone Africa/Lagos
 ```
@@ -64,10 +65,61 @@
 ``` bash
   server# sudo apt install ufw
 ```
- <p> Now we can set-up uncomplicated firewall,by allowing SSH, OpenSSH, and "WWW Full" </p>
+ <p> Now we can set-up an uncomplicated firewall,by allowing SSH, OpenSSH, and "WWW Full" </p>
   <h3> Confirmation of Apache2 Server </h3>
 
  ``` bash
   server# sudo systemctl status apache2
+```
+  <p> The output of the command ia shown below: </p>
+  
+``` bash
+  Output
+● apache2.service - The Apache HTTP Server
+    Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+   Drop-In: /lib/systemd/system/apache2.service.d
+            └─apache2-systemd.conf
+    Active: active (running) since Tue 2022-10-25 10:29:51 UTC; 5min ago
+  Main PID: 10617 (apache2)
+     Tasks: 55 (limit: 667)
+    CGroup: /system.slice/apache2.service
+            ├─10617 /usr/sbin/apache2 -k start
+            ├─10619 /usr/sbin/apache2 -k start
+            └─10620 /usr/sbin/apache2 -k start
+ Oct 25 10:29:51 apache systemd[1]: Starting The Apache HTTP Server…
+ Oct 25 10:29:51 apache systemd[1]: Started The Apache HTTP Server.
+```
+  
+  <h3> Intalling mysql </h3>
+  
+  <p> The Release package was installed with command below: </p>
+  
+``` bash
+  wget https://dev.mysql.com/get/mysql-apt-config_0.8.22-1_all.deb
+```
+  <p> Installing mysql versioon 8.0 </p>
+  
+``` bash
+  sudo apt install ./mysql-apt-config_0.8.22-1_all.deb
+```
+  
+  
+``` bash  
+ sudo apt update
+ sudo apt install mysql-server
+```
+  
+  <p> Securing mysql </p>
+  
+  
+``` bash
+  mysql_secure_installation
+```
+  
+ <h3> Intalling PHP 8.1 </h3>
+  
+``` bash
+sudo apt -y install lsb-release apt-transport-https ca-certificates
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 ```
 </ol>
