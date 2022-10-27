@@ -39,5 +39,35 @@
     server# apt update && apt upgrade
 ```
   
+  <h3> Installing wget and curl </h3>
   
+``` bash
+  server# apt install wget
+```
+
+``` bash
+  server# apt install curl
+```
+  
+  <h3> setting timezone </h3>
+``` bash
+  server# sudo timedatectl set-timezone Africa/Lagos
+```
+  <h3> installing Apache2 </h3>
+ 
+``` bash
+  server# sudo apt install apache2
+```
+  
+  <h3> Installing Firewall (UFW) </h3>
+  
+``` bash
+  server# sudo apt install ufw
+```
+ <p> Now we can set-up uncomplicated firewall,by allowing SSH, OpenSSH, and "WWW Full" </p>
+  <h3> Confirmation of Apache2 Server </h3>
+
+ ``` bash
+  server# sudo systemctl status apache2
+```
 </ol>
