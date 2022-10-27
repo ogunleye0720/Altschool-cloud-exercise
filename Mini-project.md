@@ -319,6 +319,8 @@ var/www/ogunleye# systemctl reload apache2
 ```
 
 <p> Opening ogunleye1995.me on the chrome browser,the result is shown in the image below : </p>
-<p></p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/mini-project.JPG" height="10%" width="70%" /></</p>
+<p> The end point of ogunleye1995.me is shown below in the image: </P>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/endpoint.JPG" height="10%" width="70%" /></</p>
 </ol>
 
