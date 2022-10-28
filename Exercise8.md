@@ -26,8 +26,8 @@ $ sudo crontab -e
 <p>The crontab was installed and edited to run the task specified in the path as shown in the image below</p>
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/crontab-daily-memory-usage.JPG" height="10%" width="90%" /><p>
   
-<p> The email message is shown in the image below </p>
-<p></p>
+<p> The email notification is shown in the image below </p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Yahoo Mail.jpg" height="10%" width="90%" /></p>
 
-<p> The content of the email is shown in the image below </p>
-<p></p>
+<p> The Body of the email, indicating the file attachment is shown in the image below </p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Memory_Attachment.jpg" height="10%" width="90%" /></p>
