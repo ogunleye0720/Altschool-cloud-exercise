@@ -27,7 +27,7 @@ $ sudo crontab -e
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/crontab-daily-memory-usage.JPG" height="10%" width="90%" /><p>
   
 <p> The email notification is shown in the image below </p>
-<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Yahoo Mail.jpg" height="5%" width="90%" /></p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Yahoo Mail.jpg" height="5%" width="50%" /></p>
 
 <p> The Body of the email, indicating the file attachment is shown in the image below </p>
-<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Memory_Attachment.jpg" height="5%" width="90%" /></p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Memory_Attachment.jpg" height="5%" width="50%" /></p>
