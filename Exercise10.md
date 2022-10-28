@@ -105,3 +105,32 @@ and the subnet mask is 255.255.255.248
   </p>
   
   <h3> BROADCAST IP </h3>
+ <p> By performing a logical OR operation on the Binary equivalent of the IP address and the inverse of the subnet mask, the Broadcast IP address can be generated. </p>
+  
+  | IP address in Decimal Notation  | 193 | 16 | 20 | 35 |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| IP address in Binary Equivalent  | 11000001 | 00010000 | 00010100 | 00100011 | 
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|  Inverse of Subnet mask in Binary Equivalent  | 00000000  | 00000000 | 00000000  | 00000111 |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|  Resulting OR operation Binary Equivalent  | 11000001  | 00010000 | 00010100  | 11111111 |
+  
+  
+  <p> The Binary equivalent of the result is = 11000001.00010000.00010100.11111111 </p>
+  <p> The binary equivalent result can be converted into its decimal equivalent to get the Broadband ip : </p>
+  <p> The decimal equivalent of 11000001.00010000.00010100.00100000 = 193.16.20.39 <br>
+    Therefore the Network Ip is 193.16.20.39
+  </p>
+  
+  <p> TO get the Range of IP address , <br>
+    we can subtract the Host from the last octet of the Broadcast IP 193.16.20.39, which is <br>
+    39 - 6 = 33 <br>
+    
+    This will give us the minimum range of IP address,193.16.20.33 <br>
+    
+    Therefore, the Range of IP address is: 193.16.20.33 - 193.16.20.39
+    
+    Minimum Range = 193.16.20.33
+    Maximum Range = 193.16.20.39
+    
+  </p>
