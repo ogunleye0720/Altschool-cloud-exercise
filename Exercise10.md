@@ -47,8 +47,8 @@ and the subnet mask is 255.255.255.248
   <h3> The number of hosts per subnet can be gotten from the expression: 2^sub>m</sub> - 2 </h3>
   
   ``` bash
-   2^<sup>m</sub> - 2
-   2^<sup>3</sub> - 2
+   2^<sup>m</sup> - 2
+   2^<sup>3</sup> - 2
    8 - 2 = 6
    
    The Host = 6
