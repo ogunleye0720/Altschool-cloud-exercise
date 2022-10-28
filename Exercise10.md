@@ -48,7 +48,7 @@ and the subnet mask is 255.255.255.248
   
   ``` bash
    2^m - 2
-  <p> 2^3 - 2 </p>
+   2^3 - 2 
    8 - 2 = 6
    
    The Host = 6
@@ -89,12 +89,13 @@ and the subnet mask is 255.255.255.248
   </p>
   
   <h3> Performing Logical AND operation on the ip address and subnet to get the equivalent Network IP </h3>
-  | IP address in Decimal Notation  | 193 | 16 | 20 | 35 |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
-    | IP address in Binary Equivalent  | 11000001 | 00010000 | 00010100 | 00100011 | 
+  
+| IP address in Decimal Notation  | 193 | 16 | 20 | 35 |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| IP address in Binary Equivalent  | 11000001 | 00010000 | 00010100 | 00100011 | 
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |  Subnet mask in Binary Equivalent  | 11111111  | 11111111 | 11111111  | 11111000 |
-  | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
 |  Resulting AND operation Binary Equivalent  | 11000001  | 00010000 | 00010100  | 00100000 |
   
   <p> The Binary equivalent of the result is = 11000001.00010000.00010100.00100000 </p>
