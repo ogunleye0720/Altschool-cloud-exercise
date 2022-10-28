@@ -48,8 +48,59 @@ and the subnet mask is 255.255.255.248
   
   ``` bash
    2^m - 2
-  <p> 2<sup>3</sup> - 2 </p>
+  <p> 2^3 - 2 </p>
    8 - 2 = 6
    
    The Host = 6
   ```
+  <p> To get the Network IP </p>
+  <p>Each Octets of the IP address and subnets can be converted to their equivalent binary digits (0s and 1s) and perform AND logical operation on them </p> 
+  
+  <h3> EQUIVALENT BINARY DIGIT OF THE SUBNET 255.255.255.248 </h3>
+  <p> Given the subnet 255.255.255.248 we can convert it to equivalent binary <br>
+    
+    First octet:
+    255 ------> 11111111 
+    <br>
+    Second Octet:
+    255 ------> 11111111
+     <br>
+    Third Octet:
+    255 ------> 11111111
+     <br>
+    Fourth Octet:
+    248 ------> 11111000
+  </p>
+  
+   <h3> EQUIVALENT BINARY DIGIT OF THE IP ADDRESS 193.16.20.35 </h3>
+  <p> Given the IP address 193.16.20.35/29 we can convert it to equivalent binary <br>
+    
+    First octet:
+    193 ------> 11000001
+    <br>
+    Second Octet:
+    16 ------> 00010000
+     <br>
+    Third Octet:
+    20 ------> 00010100
+     <br>
+    Fourth Octet:
+    35 ------> 00100011
+  </p>
+  
+  <h3> Performing Logical AND operation on the ip address and subnet to get the equivalent Network IP </h3>
+  | IP address in Decimal Notation  | 193 | 16 | 20 | 35 |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
+    | IP address in Binary Equivalent  | 11000001 | 00010000 | 00010100 | 00100011 | 
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|  Subnet mask in Binary Equivalent  | 11111111  | 11111111 | 11111111  | 11111000 |
+  | ------------- | ------------- | ------------- | ------------- | ------------- |
+|  Resulting AND operation Binary Equivalent  | 11000001  | 00010000 | 00010100  | 00100000 |
+  
+  <p> The Binary equivalent of the result is = 11000001.00010000.00010100.00100000 </p>
+  <p> The binary equivalent result can be converted into its decimal equivalent to get the network ip : </p>
+  <p> The decimal equivalent of 11000001.00010000.00010100.00100000 = 193.16.20.32 <br>
+    Therefore the Network Ip is 193.16.20.32
+  </p>
+  
+  <h3> BROADCAST IP </h3>
