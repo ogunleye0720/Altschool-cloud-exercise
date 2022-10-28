@@ -36,7 +36,7 @@ and the subnet mask is 255.255.255.248
   Referencing The table above,the possible values for subnet masks can be 0,128, 192, 224, 240, 248, 252, 254, and 255.
   n represents the total number of bits used for subnetting. in this case, n = 5 bits </p>
   
-  <p> The total number of bits (m) left for host can be gotten from the expression : Tb = m + n </p>
+  <p> The total number of bits (m) left for host can be gotten from the expression : T<sub>b<sub> = m + n </p>
   
   ``` bash
    m = Tb - n 
@@ -44,11 +44,11 @@ and the subnet mask is 255.255.255.248
    m = 3 
   ```
   
-  <h3> The number of hosts per subnet can be gotten from the expression: 2^<sup>m</sup> - 2 </h3>
+  <h3> The number of hosts per subnet can be gotten from the expression: 2<sup>m</sup> - 2 </h3>
   
   ``` bash
    2^m - 2
-   2<sup>3</sup> - 2
+  <p> 2<sup>3</sup> - 2 </p>
    8 - 2 = 6
    
    The Host = 6
