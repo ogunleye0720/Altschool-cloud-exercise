@@ -1,0 +1,47 @@
+#configuration of Apache server and PHP7 using ansible playbook
+---
+- name: Setup servers
+  hosts: webservers
+  remote_user: root
+
+
+  tasks:
+#Installation of the latest version of apache using apt package installer
+  - name: Install apache2
+    apt:
+       name: apache2
+       state: present
+       update_cache: yes
+#Starting the apache server
+  - name: Start apache
+    service: 
+           name: apache2
+           state: started
+           enabled: yes
+#Getting the apache startus
+  - name: Get the status of apache2 server
+    command: systemctl status apache2
+#setting the timezone to Africa/Lagos
+  - name: Setting the timezone to Africa/Lagos
+    command: timedatectl set-timezone Africa/Lagos
+
+  - name: Getting the status of the timezone
+    command: timedatectl
+  
+# Installing PHP Version 7 using the ppa:ondrej/php repo
+  - name: Installation install software properties-common
+    apt:
+       name: software-properties-common
+
+  - name: Repo PHP 7.4
+    apt_repository:
+                 repo: "ppa:ondrej/php"
+
+  - name: "UPDATING THE REPO"      
+    apt:
+       update_cache: yes
+
+  - name: INSTALLING PHP VERSION 7.4
+    apt:
+       name: php7.4
+       state: present

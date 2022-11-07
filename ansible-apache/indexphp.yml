@@ -1,0 +1,15 @@
+---
+- name: Copies the index.php file from local host
+  hosts: webservers
+  remote_user: root
+  tasks:
+  - name: Copying index.php file from local host to remoteserver
+    copy:
+      src: /home/vagrant/ansible-apache/index.php
+      dest: /var/www/html/index.php 
+
+
+
+
+
+
