@@ -33,4 +33,4 @@ $ sudo crontab -e
 <p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Memory_Attachment.jpg" height="5%" width="50%" /></p>
 
 <p> The content of the file attachment is shown in the image below </p>
-<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/Ram-content.jpg" height="5%" width="50%" /></p>
+<p><img src="https://github.com/ogunleye0720/Altschool-cloud-exercise/raw/main/RAM_Content.jpg" height="5%" width="50%" /></p>
