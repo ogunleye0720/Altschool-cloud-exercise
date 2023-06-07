@@ -1,0 +1,150 @@
+---
+
+- name: Deploy LAMP Stack
+
+  hosts: web_servers
+
+  become: true
+
+  vars:
+
+    mysql_root_password: your_mysql_root_password
+
+    database_name: your_database_name
+
+    database_user: your_database_user
+
+    database_password: your_database_password
+
+  tasks:
+
+    - name: Update apt cache
+
+      apt:
+
+        update_cache: yes
+
+      become: true
+
+    - name: Install Apache
+
+      apt:
+
+        name: apache2
+
+        state: present
+
+      become: true
+
+    - name: Start Apache service
+
+      service:
+
+        name: apache2
+
+        state: started
+
+        enabled: yes
+
+      become: true
+
+    - name: Install MySQL
+
+      apt:
+
+        name: mysql-server
+
+        state: present
+
+      become: true
+
+      vars:
+
+        mysql_root_password: "{{ mysql_root_password }}"
+
+    - name: Secure MySQL installation
+
+      expect:
+
+        command: mysql_secure_installation
+
+        responses:
+
+          'Enter password for user root:': "{{ mysql_root_password }}"
+
+          'Press y|Y for Yes, any other key for No:': "y"
+
+          'Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:': "2"
+
+          'Change the password for root ? ((Press y|Y for Yes, any other key for No) :': "n"
+
+          'Remove anonymous users? (Press y|Y for Yes, any other key for No) :': "y"
+
+          'Disallow root login remotely? (Press y|Y for Yes, any other key for No) :': "y"
+
+          'Remove test database and access to it? (Press y|Y for Yes, any other key for No) :': "y"
+
+          'Reload privilege tables now? (Press y|Y for Yes, any other key for No) :': "y"
+
+      become: true
+
+    - name: Install PHP and required modules
+
+      apt:
+
+        name: "{{ item }}"
+
+        state: present
+
+      become: true
+
+      with_items:
+
+        - libapache2-mod-php
+
+        - php
+
+        - php-mysql
+
+    - name: Restart Apache service
+
+      service:
+
+        name: apache2
+
+        state: restarted
+
+      become: true
+
+    - name: Create MySQL database
+
+      mysql_db:
+
+        name: "{{ database_name }}"
+
+        state: present
+
+      become: true
+
+      vars:
+
+        mysql_root_password: "{{ mysql_root_password }}"
+
+    - name: Create MySQL database user
+
+      mysql_user:
+
+        name: "{{ database_user }}"
+
+        password: "{{ database_password }}"
+
+        priv: "{{ database_name }}.*:ALL"
+
+        state: present
+
+      become: true
+
+      vars:
+
+        mysql_root_password: "{{ mysql_root_password }}"
+
