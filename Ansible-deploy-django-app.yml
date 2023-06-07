@@ -1,0 +1,55 @@
+---
+- name: Deploy Django Application
+  hosts: all
+  become: yes
+  vars:
+    django_app_path: /path/to/your/app
+    virtualenv_path: /path/to/your/virtualenv
+    git_repo: https://github.com/your/repo.git
+    git_branch: main
+  tasks:
+    - name: Check OS distribution
+      command: "uname -s"
+      register: os_distribution
+
+    - name: Install Python and other dependencies
+      package:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - python3
+        - python3-pip
+        - python3-venv
+      when: os_distribution.stdout == "Linux"
+
+    - name: Clone or update the code repository
+      git:
+        repo: "{{ git_repo }}"
+        dest: "{{ django_app_path }}"
+        version: "{{ git_branch }}"
+        force: yes
+      when: os_distribution.stdout == "Linux"
+
+    - name: Create and activate the virtual environment
+      command: "python3 -m venv {{ virtualenv_path }}"
+      args:
+        chdir: "{{ django_app_path }}"
+      when: os_distribution.stdout == "Linux"
+
+    - name: Install Python dependencies
+      pip:
+        requirements: "{{ django_app_path }}/requirements.txt"
+        virtualenv: "{{ virtualenv_path }}"
+      when: os_distribution.stdout == "Linux"
+
+    - name: Run database migrations
+      command: "{{ virtualenv_path }}/bin/python manage.py migrate"
+      args:
+        chdir: "{{ django_app_path }}"
+      when: os_distribution.stdout == "Linux"
+
+    - name: Collect static files
+      command: "{{ virtualenv_path }}/bin/python manage.py collectstatic --noinput"
+      args:
+        chdir: "{{ django_app_path }}"
+      when: os_distribution.stdout == "Linux"
