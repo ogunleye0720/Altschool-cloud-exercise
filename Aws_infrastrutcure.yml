@@ -1,0 +1,90 @@
+---
+- name: Create Three-Tier AWS Infrastructure
+  hosts: localhost
+  gather_facts: no
+  connection: local
+
+  vars:
+    aws_region: "us-east-1"  # Replace with your desired region
+
+  tasks:
+    - name: Create VPC
+      ec2_vpc_net:
+        name: main-vpc
+        cidr_block: "10.0.0.0/16"
+        region: "{{ aws_region }}"
+        state: present
+      register: vpc_result
+
+    - name: Create Internet Gateway
+      ec2_vpc_igw:
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        region: "{{ aws_region }}"
+        state: present
+      register: igw_result
+
+    - name: Attach Internet Gateway to VPC
+      ec2_vpc_igw_info:
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        region: "{{ aws_region }}"
+      register: igw_info_result
+      when: igw_result.changed
+
+    - name: Create Public Subnet
+      ec2_vpc_subnet:
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        cidr: "10.0.1.0/24"
+        region: "{{ aws_region }}"
+        az: "{{ aws_region }}a"  # Replace with your desired availability zone
+        state: present
+      register: public_subnet_result
+
+    - name: Create Private Subnet
+      ec2_vpc_subnet:
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        cidr: "10.0.2.0/24"
+        region: "{{ aws_region }}"
+        az: "{{ aws_region }}b"  # Replace with your desired availability zone
+        state: present
+      register: private_subnet_result
+
+    - name: Create Database Subnet
+      ec2_vpc_subnet:
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        cidr: "10.0.3.0/24"
+        region: "{{ aws_region }}"
+        az: "{{ aws_region }}c"  # Replace with your desired availability zone
+        state: present
+      register: database_subnet_result
+
+    - name: Create Security Group for Web Servers
+      ec2_group:
+        name: web-servers-sg
+        description: Security group for web servers
+        region: "{{ aws_region }}"
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        rules:
+          - proto: tcp
+            from_port: 80
+            to_port: 80
+            cidr_ip: 0.0.0.0/0
+          - proto: tcp
+            from_port: 443
+            to_port: 443
+            cidr_ip: 0.0.0.0/0
+        state: present
+      register: web_sg_result
+
+    - name: Create Security Group for Database
+      ec2_group:
+        name: database-sg
+        description: Security group for database
+        region: "{{ aws_region }}"
+        vpc_id: "{{ vpc_result.vpc.id }}"
+        rules:
+          - proto: tcp
+            from_port: 3306
+            to_port: 3306
+            group_name: web-servers-sg
+        state: present
+      register: database_sg_result
