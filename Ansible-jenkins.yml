@@ -1,0 +1,71 @@
+---
+- name: Install Jenkins and Create User
+  hosts: all
+  become: yes
+  vars:
+    jenkins_admin_username: your_admin_username
+    jenkins_admin_password: your_admin_password
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+      when: ansible_os_family == 'Debian'
+
+    - name: Install Java
+      apt:
+        name: openjdk-11-jdk
+        state: present
+      when: ansible_os_family == 'Debian'
+
+    - name: Install Jenkins repository key
+      apt_key:
+        url: https://pkg.jenkins.io/debian/jenkins.io.key
+        state: present
+      when: ansible_os_family == 'Debian'
+
+    - name: Add Jenkins repository
+      apt_repository:
+        repo: deb https://pkg.jenkins.io/debian-stable binary/
+        state: present
+      when: ansible_os_family == 'Debian'
+
+    - name: Install Jenkins
+      apt:
+        name: jenkins
+        state: present
+      when: ansible_os_family == 'Debian'
+
+    - name: Start Jenkins service
+      service:
+        name: jenkins
+        state: started
+        enabled: yes
+      when: ansible_os_family == 'Debian'
+
+    - name: Wait for Jenkins to start
+      uri:
+        url: http://localhost:8080
+        method: GET
+        return_content: yes
+        status_code: 200
+      register: jenkins_status
+      until: jenkins_status.status == 200
+      retries: 10
+      delay: 5
+
+    - name: Get Jenkins initial admin password
+      shell: "sudo cat /var/lib/jenkins/secrets/initialAdminPassword"
+      register: jenkins_admin_password_output
+      when: jenkins_status.status == 200
+
+    - name: Create Jenkins admin user
+      uri:
+        url: http://localhost:8080/scriptText
+        method: POST
+        body: "script=jenkins.model.Jenkins.instance.securityRealm.createAccount('{{ jenkins_admin_username }}', '{{ jenkins_admin_password }}')"
+        return_content: yes
+        headers:
+          Content-Type: "application/x-www-form-urlencoded"
+        status_code: 200
+        body_format: raw
+      when: jenkins_status.status == 200
