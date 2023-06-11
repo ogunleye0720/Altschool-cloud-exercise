@@ -16,7 +16,7 @@
         state: present
       register: vpc_result
 
-    - name: Create Internet Gateway
+    - name: Create The Internet Gateway
       ec2_vpc_igw:
         vpc_id: "{{ vpc_result.vpc.id }}"
         region: "{{ aws_region }}"
