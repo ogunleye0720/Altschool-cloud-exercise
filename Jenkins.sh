@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Jenkins script to install jenkins on vatious linux distribution 
+
 # Detect the Linux distribution
 
 if [ -f /etc/redhat-release ]; then
